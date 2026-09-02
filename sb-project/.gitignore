@@ -1,0 +1,14 @@
+*
+
+!/.gitignore
+
+!/README.md
+!/package.json
+!/postcss.config.js
+!/vite.config.js
+
+!/static/
+!/static/**
+
+!/src/
+!/src/**

@@ -1,0 +1,31 @@
+{
+  "name": "junyukungfu.github.io",
+  "version": "0.1.0",
+  "description": "JunyuKungFu - Official Site",
+  "private": true,
+  "type": "module",
+  "homepage": "https://junyukungfu.github.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junyukungfu/junyukungfu.github.io.git"
+  },
+  "author": "Jamil Services <jamilservicos@gmail.com> (https://github.com/jamilservicos)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@jamilservices/sb-module-notify": "latest",
+    "@simplybuilder/core-dom": "latest",
+    "@simplybuilder/core-event": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "postcss-nested": "latest",
+    "sass": "latest",
+    "terser": "latest",
+    "vite": "latest"
+  }
+}
