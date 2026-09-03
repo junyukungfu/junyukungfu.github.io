@@ -1,0 +1,58 @@
+/* ==========================================================================
+   _base.scss — reset, tipografia base, utilitários globais e título de seção
+   ========================================================================== */
+@use 'tokens' as *;
+@use 'mixins' as *;
+@use 'animations';
+
+:root {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Acessibilidade — estado de foco visível (teclado) */
+:focus-visible {
+  outline: 2px solid $c-gold;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'ZCOOL XiaoWei', 'Songti SC', 'STSong', 'Noto Serif', Georgia, serif;
+  font-size: 1.125rem; /* 18px base — a fonte ZCOOL renderiza naturalmente pequena */
+  color: $c-ink;
+  background-color: $c-paper;
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba($c-gold, 0.05) 0%, rgba($c-gold, 0) 34%),
+    radial-gradient(circle at 88% 20%, rgba($c-lacquer, 0.04) 0%, rgba($c-lacquer, 0) 30%);
+  min-height: 100vh;
+  line-height: 1.7;
+  font-weight: 600;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(1120px, 92vw);
+  margin-inline: auto;
+}
+
+.section-title {
+  @extend %section-title;
+}

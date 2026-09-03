@@ -1,0 +1,35 @@
+/* ==========================================================================
+   _contact.scss — seção de contato / redes sociais
+   ========================================================================== */
+@use 'tokens' as *;
+@use 'mixins' as *;
+
+.contact {
+  @extend %section-padding;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  &__link {
+    @extend %clickable;
+    @extend %elevated-card;
+    padding: 0.8em 1.5em;
+    border-radius: $radius-sm;
+    color: $c-lacquer;
+    text-decoration: none;
+    font-size: 1.0625rem;
+
+    &:hover {
+      background-color: rgba($c-gold, 0.12);
+      border-color: $c-gold;
+      transform: translateY(-2px);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+/* ==========================================================================
+   _tokens.scss — tokens de design (cores + helpers de tipografia/espaçamento)
+   Paleta: estética chinesa, tema claro (fundo marfim quase-branco).
+   ========================================================================== */
+
+// Cores — canônicas
+$c-paper: #dfdedd;          // fundo base — marfim/papel chinês (não branco puro)
+//$c-paper: #f4f1ea;          // fundo base — marfim/papel chinês (não branco puro)
+$c-paper-high: #f8f6f2;     // fundo de elevação (pills/cards/links)
+//$c-paper-high: #faf7f0;     // fundo de elevação (pills/cards/links)
+$c-ink: #201812;            // texto principal
+$c-ink-soft: #3c352c;       // texto secundário (contraste AA sobre marfim)
+$c-lacquer: #7a1410;        // vermelho laca — acento primário
+$c-lacquer-deep: #4c0b08;   // lacquer escuro
+$c-gold: #9a7a35;           // dourado ocre (acento decorativo)
+$c-gold-light: #b08c45;     // dourado ocre claro
+
+// Radius
+$radius-sm: 4px;
+$radius-md: 6px;
+$radius-pill: 999px;
+
+// Transições
+$t-fast: 0.2s ease;
+$t-move: 0.25s ease;

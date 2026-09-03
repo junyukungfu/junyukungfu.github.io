@@ -11,8 +11,14 @@ import { app } from '@mods/mod.js';
 
 const bootstrap = () => {
   try {
-    const {comingSoon} = app.start();
-    comingSoon();
+    const mods = app.start();
+    mods.header();
+    mods.hero();
+    mods.about();
+    mods.gallery();
+    mods.locationSection();
+    mods.contact();
+    mods.footer();
   } catch (err) {
     console.error('Falha ao carregar módulos da aplicação:', err);
   }

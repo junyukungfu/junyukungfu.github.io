@@ -1,0 +1,59 @@
+/* ==========================================================================
+   _about.scss — seção "Sobre o Instituto"
+   ========================================================================== */
+@use 'tokens' as *;
+@use 'mixins' as *;
+
+.about {
+  @extend %section-padding;
+  background-color: $c-paper;
+  border-block: 1px solid rgba($c-gold, 0.3);
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__body {
+    max-width: 62ch;
+    margin: 0 auto;
+  }
+
+  &__paragraph {
+    @extend %prose;
+    font-size: 1.1875rem;
+    margin: 0 0 1.1rem;
+  }
+
+  &__disciplines {
+    list-style: none;
+    margin: 1.4rem 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    justify-content: center;
+  }
+
+  &__discipline {
+    @extend %elevated-card;
+    padding: 0.55em 1.25em;
+    border-radius: $radius-pill;
+    color: $c-lacquer;
+    font-size: 1.0625rem;
+    letter-spacing: 0.05em;
+  }
+
+  &__founder {
+    color: $c-ink-soft;
+    font-size: 1.125rem;
+
+    &-label {
+      color: $c-ink-soft;
+    }
+
+    strong {
+      color: $c-lacquer-deep;
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+/* ==========================================================================
+   _gallery.scss — galeria de fotos (grid adaptativo)
+   ========================================================================== */
+@use 'tokens' as *;
+@use 'mixins' as *;
+
+.gallery {
+  @extend %section-padding;
+
+  &__intro {
+    text-align: center;
+    color: $c-ink-soft;
+    font-size: 1.125rem;
+    max-width: 52ch;
+    margin: -0.6rem auto 2rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: clamp(1rem, 3vw, 1.6rem);
+  }
+
+  &__item {
+    margin: 0;
+    border-radius: $radius-md;
+    overflow: hidden;
+    background: $c-paper;
+    border: 1px solid rgba($c-gold, 0.3);
+    box-shadow: 0 6px 18px rgba($c-ink, 0.07);
+    transition: transform $t-move, box-shadow $t-move;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba($c-ink, 0.12);
+    }
+  }
+
+  &__img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+}

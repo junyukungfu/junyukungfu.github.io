@@ -1,0 +1,31 @@
+/* ==========================================================================
+   _location.scss — seção "Onde Estamos" (endereço + mapa)
+   ========================================================================== */
+@use 'tokens' as *;
+@use 'mixins' as *;
+
+.location {
+  @extend %section-padding;
+  background-color: $c-paper;
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__address {
+    display: block;
+    font-style: normal;
+    color: $c-ink-soft;
+    margin: -0.4rem 0 1.6rem;
+    font-size: 1.125rem;
+  }
+
+  &__map {
+    width: 100%;
+    height: clamp(280px, 50vw, 420px);
+    border: 1px solid rgba($c-gold, 0.4);
+    border-radius: $radius-md;
+    box-shadow: 0 10px 26px rgba($c-ink, 0.1);
+    margin-bottom: 1.4rem;
+  }
+}

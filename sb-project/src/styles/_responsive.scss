@@ -1,0 +1,36 @@
+/* ==========================================================================
+   _responsive.scss — ajustes responsivos (menu mobile)
+   ========================================================================== */
+@use 'tokens' as *;
+
+@media (max-width: 720px) {
+  .site-header {
+    &__toggle {
+      display: flex;
+    }
+
+    &__nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      gap: 0;
+      background: rgba($c-paper, 0.98);
+      border-bottom: 1px solid rgba($c-gold, 0.35);
+      padding: 0.5rem 1.5rem 1rem;
+
+      &[data-open='true'] {
+        display: flex;
+      }
+    }
+
+    &__link {
+      display: block;
+      padding: 0.85rem 0;
+      font-size: 1.125rem;
+      border-bottom: 1px dashed rgba($c-gold, 0.3);
+    }
+  }
+}
