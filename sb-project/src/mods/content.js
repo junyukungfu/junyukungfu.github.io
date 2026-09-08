@@ -27,7 +27,7 @@ const content = {
   },
   location: {
     title: 'Onde Estamos',
-    address: 'Rua Eurico do Vale, 1089 – Pirapora, Castanhal – PA, 68740-350',
+    address: 'Rua Eurico do Vale, 1089 – Pirapora, Castanhal – PA, 68740-290',
     mapsLink: 'https://maps.app.goo.gl/rgKSeCrPsEz19Db4A?g_st=aw',
     mapsEmbed: 'https://www.google.com/maps?q=Centro+de+Artes+Marciais+Sheng+Junyu+Kung+Fu+Instituto,+R.+Eurico+do+Vale,+1089,+Pirapora,+Castanhal,+PA&output=embed',
   },
